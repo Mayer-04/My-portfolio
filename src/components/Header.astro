@@ -1,0 +1,21 @@
+---
+const navList = [
+  { name: "Sobre mí", url: "/" },
+  { name: "Experiencia", url: "#experience" },
+  { name: "Tecnologías", url: "#technologies" },
+  { name: "Proyectos", url: "#projects" },
+  { name: "Contacto", url: "#contact" },
+];
+---
+
+<header class="flex justify-center items-center w-full py-5">
+  <nav class="bg-neutral-950 rounded-3xl px-3 py-2">
+    {
+      navList.map(({ name, url }) => (
+        <a class="" href={url}>
+          {name}
+        </a>
+      ))
+    }
+  </nav>
+</header>
