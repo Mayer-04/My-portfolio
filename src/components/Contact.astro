@@ -1,20 +1,29 @@
 ---
-import Github from "@/icons/Github.astro";
-import Gmail from "@/icons/Gmail.astro";
 import Linkedln from "@/icons/Linkedln.astro";
+import SocialNetworks from "./SocialNetworks.astro";
+import GitHub from "@/icons/GitHub.astro";
+import Gmail from "@/icons/Gmail.astro";
 ---
 
-<nav class="flex">
-  <a href="https://www.linkedin.com/in/mayerchaves/">
-    <Linkedln />
-    LinkedIn
-  </a>
-  <a href="https://www.linkedin.com/in/mayerchaves/">
-    <Github />
-    Github
-  </a>
-  <a href="https://www.linkedin.com/in/mayerchaves/">
-    <Gmail />
-    Correo
-  </a>
-</nav>
+<ul class="flex gap-5">
+  <li>
+    <SocialNetworks href="https://github.com/Mayer-04" text="GitHub">
+      <GitHub slot="icon" class="w-8 h-8" />
+    </SocialNetworks>
+  </li>
+
+  <li>
+    <SocialNetworks
+      href="https://www.linkedin.com/in/mayer-chaves-90116824b/"
+      text="LinkedIn"
+    >
+      <Linkedln slot="icon" class="w-8 h-8" />
+    </SocialNetworks>
+  </li>
+
+  <li>
+    <SocialNetworks href="mailto:mayerchaves10@gmail.com" text="Gmail">
+      <Gmail slot="icon" class="w-8 h-8" />
+    </SocialNetworks>
+  </li>
+</ul>
