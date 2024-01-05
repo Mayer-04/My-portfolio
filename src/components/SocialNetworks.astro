@@ -8,7 +8,7 @@ const { href, text } = Astro.props;
 ---
 
 <a
-  class="flex justify-center items-center gap-3 bg-primary py-2 px-5 rounded-full hover:text-blue-300/95 transition"
+  class="flex justify-center items-center gap-3 py-2 px-5 rounded-full hover:text-blue-300/95 transition"
   href={href}
   target="_blank"
   rel="noopener noreferrer"
@@ -16,3 +16,14 @@ const { href, text } = Astro.props;
   <slot name="icon" />
   {text}
 </a>
+
+<style>
+  a {
+    background: linear-gradient(
+      30.6deg,
+      rgba(124, 130, 177, 0.12) 28.69%,
+      hsla(241, 41%, 62%, 0.3) 100%
+    );
+    border: 1px solid hsla(241, 41%, 62%, 0.3);
+  }
+</style>
