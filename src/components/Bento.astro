@@ -1,0 +1,141 @@
+---
+import Angular from "@/icons/front-end/Angular.astro";
+import Css from "@/icons/front-end/Css.astro";
+import Html from "@/icons/front-end/Html.astro";
+import JavaScript from "@/icons/front-end/JavaScript.astro";
+import Tailwind from "@/icons/front-end/Tailwind.astro";
+import TypeScript from "@/icons/front-end/TypeScript.astro";
+import Vite from "@/icons/front-end/Vite.astro";
+
+// Back-end
+
+import Node from "@/icons/back-end/Node.astro";
+import PostgreSQL from "@/icons/back-end/PostgreSQL.astro";
+import Prisma from "@/icons/back-end/Prisma.astro";
+import Docker from "@/icons/back-end/Docker.astro";
+import Express from "@/icons/back-end/Express.astro";
+import MongoDB from "@/icons/back-end/MongoDB.astro";
+---
+
+<section class="grid grid-cols-9 mx-auto max-w-3xl auto-rows-auto gap-4 p-14">
+  <article class="col-span-4 border border-red-600 p-7">
+    <h2 class="text-2xl font-semibold mb-2">Sobre mí</h2>
+    <ul class="list-disc">
+      <li>Mi nombre es Mayer Andres Chaves</li>
+      <li>Tengo 23 años</li>
+      <li>De Bogotá - Colombia</li>
+      <li>Aprendiendo actualmente Go</li>
+      <a class="py-2 px-5 rounded-full bg-blue-300/95" href=""
+        >Disponible para contratar</a
+      >
+    </ul>
+  </article>
+
+  <article class="col-span-5 border border-red-600 p-5">
+    <h2 class="text-2xl font-semibold mb-2">Mi experiencia</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa optio
+      labore error modi minima architecto voluptate ullam distinctio vitae
+      exercitationem totam, nobis explicabo eaque eos doloribus animi
+      perspiciatis rem doloremque.
+    </p>
+  </article>
+
+  <article class="col-span-9 border border-red-600 p-5">
+    <div class="flex"></div>
+  </article>
+
+  <article class="col-span-5 border border-red-600 p-5">
+    <h2 class="text-2xl font-semibold mb-5 text-blue-300/95 text-center">
+      Tecnologías Front-End
+    </h2>
+
+    <div id="hola" class="grid grid-cols-3">
+      <div class="flex flex-col justify-center items-center">
+        <Html class="w-8 h-8" />
+        <h3>HTML</h3>
+      </div>
+
+      <div class="flex flex-col justify-center items-center">
+        <Css class="w-8 h-8" />
+        <h3>CSS</h3>
+      </div>
+
+      <div class="flex flex-col justify-center items-center">
+        <Tailwind class="w-8 h-8" />
+        <h3>TailwindCSS</h3>
+      </div>
+
+      <div class="flex flex-col justify-center items-center">
+        <Vite class="w-8 h-8" />
+        <h3>Vite.JS</h3>
+      </div>
+
+      <div class="flex flex-col justify-center items-center">
+        <JavaScript class="w-8 h-8" />
+        <h3>JavaScript</h3>
+      </div>
+
+      <div class="flex flex-col justify-center items-center">
+        <TypeScript class="w-8 h-8" />
+        <h3>TypeScript</h3>
+      </div>
+
+      <div class="flex flex-col justify-center items-center">
+        <Angular class="w-8 h-8" />
+        <h3>Angular</h3>
+      </div>
+    </div>
+  </article>
+
+  <article class="col-span-4 border border-red-600 p-5">
+    <h2 class="text-2xl font-semibold mb-5 text-emerald-300 text-center">
+      Tecnologías Back-End
+    </h2>
+    <p>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="flex flex-col justify-center items-center">
+          <Docker class="w-8 h-8" />
+          <h3>Docker</h3>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <Node class="w-8 h-8" />
+          <h3>Node.js</h3>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <Express class="w-8 h-8" />
+          <h3>Express</h3>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <MongoDB class="w-8 h-8" />
+          <h3>MongoDB</h3>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <PostgreSQL class="w-8 h-8" />
+          <h3>PostgreSQL</h3>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <Prisma class="w-8 h-8" />
+          <h3>Prisma</h3>
+        </div>
+      </div>
+    </p>
+  </article>
+</section>
+
+<style>
+  article {
+    background: linear-gradient(
+      30.6deg,
+      rgba(124, 130, 177, 0.12) 28.69%,
+      hsla(241, 41%, 62%, 0.3) 100%
+    );
+    border: 1px solid hsla(241, 41%, 62%, 0.3);
+    border-radius: 12px;
+  }
+</style>
