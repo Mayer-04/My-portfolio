@@ -7,7 +7,7 @@ export default {
         gabarito: ["Gabarito", "sans-serif"],
       },
       backgroundColor: {
-        primary: "#212636",
+        primary: "hsla(241, 41%, 62%, 0.3)",
       },
     },
   },
