@@ -1,14 +1,11 @@
 ---
+import AboutMe from "@/components/AboutMe.astro";
 import Layout from "@/layouts/Layout.astro";
-import Github from "@/components/icons/Github.astro";
 
 const title = "Bienvenidos";
 const description = "Esta es una descriptión";
 ---
 
 <Layout title={title} description={description}>
-  <main>
-    <Github />
-    <h1 class="text-white">Hola mundo</h1>
-  </main>
+  <AboutMe />
 </Layout>

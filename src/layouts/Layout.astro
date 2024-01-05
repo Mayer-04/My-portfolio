@@ -2,7 +2,7 @@
 import "@/utils/font-family";
 import Background from "@/components/Background.astro";
 import Header from "@/components/Header.astro";
-import Contact from "@/components/Contact.astro";
+import Footer from "@/components/Footer.astro";
 
 interface Props {
   title: string;
@@ -13,7 +13,7 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -22,11 +22,13 @@ const { title, description } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="font-gabarito scroll-smooth">
+  <body class="font-gabarito">
     <Background />
     <Header />
-    <slot />
-    <Contact />
+    <main class="max-w-4xl mx-auto">
+      <slot />
+    </main>
+    <Footer />
   </body>
 </html>
 
