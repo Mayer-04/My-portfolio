@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import BentoItem from "@/components/about/BentoItem.astro";
 
 interface Props {
   title: string;
@@ -16,34 +17,39 @@ const { title } = Astro.props;
   </h2>
 
   <div class="grid grid-cols-3 gap-5">
-    <div class="flex flex-col justify-center items-center">
-      <Icon name="front-end/html" class="size-8" />
-      <h3>HTML</h3>
-    </div>
+    <BentoItem>
+      <Icon name="front-end/html" slot="icon" class="size-8" />
+      <h3 slot="technology">HTML</h3>
+    </BentoItem>
 
-    <div class="flex flex-col justify-center items-center">
-      <Icon name="front-end/css" class="size-8" />
-      <h3>CSS</h3>
-    </div>
+    <BentoItem>
+      <Icon name="front-end/css" slot="icon" class="size-8" />
+      <h3 slot="technology">CSS</h3>
+    </BentoItem>
 
-    <div class="flex flex-col justify-center items-center">
-      <Icon name="front-end/tailwindcss" class="size-8" />
-      <h3>TailwindCSS</h3>
-    </div>
+    <BentoItem>
+      <Icon name="front-end/tailwindcss" slot="icon" class="size-8" />
+      <h3 slot="technology">TailwindCSS</h3>
+    </BentoItem>
 
-    <div class="flex flex-col justify-center items-center">
-      <Icon name="front-end/javascript" class="size-8" />
-      <h3>JavaScript</h3>
-    </div>
+    <BentoItem>
+      <Icon name="front-end/javascript" slot="icon" class="size-8" />
+      <h3 slot="technology">JavaScript</h3>
+    </BentoItem>
 
-    <div class="flex flex-col justify-center items-center">
-      <Icon name="front-end/typescript" class="size-8" />
-      <h3>TypeScript</h3>
-    </div>
+    <BentoItem>
+      <Icon name="front-end/typescript" slot="icon" class="size-8" />
+      <h3 slot="technology">TypeScript</h3>
+    </BentoItem>
 
-    <div class="flex flex-col justify-center items-center">
-      <Icon name="front-end/angular" class="size-8" />
-      <h3>Angular</h3>
-    </div>
+    <BentoItem>
+      <Icon name="front-end/astro" slot="icon" class="size-8" />
+      <h3 slot="technology">Astro</h3>
+    </BentoItem>
+
+    <BentoItem>
+      <Icon name="front-end/angular" slot="icon" class="size-8" />
+      <h3 slot="technology">Angular</h3>
+    </BentoItem>
   </div>
 </article>
