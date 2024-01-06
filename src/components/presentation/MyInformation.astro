@@ -1,0 +1,28 @@
+---
+interface Props {
+  yearsOfExperience: string;
+}
+
+const { yearsOfExperience } = Astro.props;
+---
+
+<article
+  class="flex flex-col justify-center items-center max-w-[550px] break-words"
+>
+  <ul class="list-disc text-xl rounded-xl">
+    <li>
+      <strong class="text-blue-300/95">{yearsOfExperience}</strong>
+      en desarrollo de <strong class="text-blue-300/95">páginas web.</strong>
+    </li>
+    <li>
+      <strong class="text-emerald-300">{yearsOfExperience}</strong>
+      autodidacta en desarrollo <strong class="text-emerald-300"
+        >Back-end.</strong
+      >
+    </li>
+  </ul>
+  <p class="text-xl text-pretty mt-6">
+    Disfruto el desarrollo, ya que me motiva a superar obstáculos y experimentar
+    un <strong class="text-blue-300/95">crecimiento personal</strong> constante.
+  </p>
+</article>

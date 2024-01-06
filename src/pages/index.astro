@@ -1,15 +1,17 @@
 ---
-import Bento from "@/components/Bento.astro";
-import Hero from "@/components/Hero.astro";
-import Projects from "@/components/Projects.astro";
+import Bento from "@/components/bento/Bento.astro";
+import Hero from "@/components/presentation/Hero.astro";
+import Projects from "@/components/projects/Projects.astro";
 import Layout from "@/layouts/Layout.astro";
 
-const title = "Bienvenidos";
-const description = "Esta es una descriptión";
+const title = "Porfolio Mayer Andres";
+const description = "Programador Full Stack";
 ---
 
 <Layout title={title} description={description}>
-  <Hero />
-  <Bento />
-  <Projects />
+  <main class="container mx-auto">
+    <Hero />
+    <Bento />
+    <Projects />
+  </main>
 </Layout>

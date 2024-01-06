@@ -1,10 +1,5 @@
 ---
-import Node from "@/icons/back-end/Node.astro";
-import PostgreSQL from "@/icons/back-end/PostgreSQL.astro";
-import Prisma from "@/icons/back-end/Prisma.astro";
-import Docker from "@/icons/back-end/Docker.astro";
-import Express from "@/icons/back-end/Express.astro";
-import MongoDB from "@/icons/back-end/MongoDB.astro";
+import { Icon } from "astro-icon/components";
 
 interface Props {
   title: string;
@@ -13,52 +8,43 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<article class="col-span-4 border p-5">
+<article
+  class="col-span-4 p-5 bg-primary-gradient border border-mayer-100 rounded-xl"
+>
   <h2 class="text-2xl font-semibold mb-5 text-emerald-300 text-center">
     {title}
   </h2>
 
   <div class="grid grid-cols-3 gap-5">
     <div class="flex flex-col justify-center items-center">
-      <Docker class="w-8 h-8 grayscale transition hover:grayscale-0" />
+      <Icon name="back-end/docker" class="size-8" />
+
       <h3>Docker</h3>
     </div>
 
     <div class="flex flex-col justify-center items-center">
-      <Node class="w-8 h-8" />
+      <Icon name="back-end/node" class="size-8" />
       <h3>Node.js</h3>
     </div>
 
     <div class="flex flex-col justify-center items-center">
-      <Express class="w-8 h-8" />
+      <Icon name="back-end/express" class="size-8" />
       <h3>Express</h3>
     </div>
 
     <div class="flex flex-col justify-center items-center">
-      <MongoDB class="w-8 h-8" />
+      <Icon name="back-end/mongodb" class="size-8" />
       <h3>MongoDB</h3>
     </div>
 
     <div class="flex flex-col justify-center items-center">
-      <PostgreSQL class="w-8 h-8" />
+      <Icon name="back-end/postgresql" class="size-8" />
       <h3>PostgreSQL</h3>
     </div>
 
     <div class="flex flex-col justify-center items-center">
-      <Prisma class="w-8 h-8" />
+      <Icon name="back-end/prisma" class="size-8" />
       <h3>Prisma</h3>
     </div>
   </div>
 </article>
-
-<style>
-  article {
-    background: linear-gradient(
-      30.6deg,
-      rgba(124, 130, 177, 0.12) 28.69%,
-      hsla(241, 41%, 62%, 0.3) 100%
-    );
-    border: 1px solid hsla(241, 41%, 62%, 0.3);
-    border-radius: 12px;
-  }
-</style>

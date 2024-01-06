@@ -1,0 +1,26 @@
+---
+import AboutMe from "@/components/bento/AboutMe.astro";
+import Experience from "@/components/bento/Experience.astro";
+import AvailableForWork from "@/components/bento/AvailableForWork.astro";
+import FrontEnd from "@/components/technologies/FrontEnd.astro";
+import BackEnd from "@/components/technologies/BackEnd.astro";
+---
+
+<section
+  id="aboutMe"
+  class="grid grid-cols-9 mx-auto max-w-3xl auto-rows-auto gap-4 p-14"
+>
+  <AboutMe title="Sobre mí" />
+
+  <Experience
+    title="Experiencia"
+    year="Febrero 2019 - Enero 2020"
+    company="Max Globo"
+    description="Desarrollador de sitios web y mantenimiento de la plataforma."
+  />
+
+  <AvailableForWork />
+
+  <FrontEnd title="Tecnologías Front-End" />
+  <BackEnd title="Tecnologías Back-End" />
+</section>

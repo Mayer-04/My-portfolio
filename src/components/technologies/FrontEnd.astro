@@ -1,10 +1,5 @@
 ---
-import Html from "@/icons/front-end/Html.astro";
-import Css from "@/icons/front-end/Css.astro";
-import Tailwind from "@/icons/front-end/Tailwind.astro";
-import JavaScript from "@/icons/front-end/JavaScript.astro";
-import TypeScript from "@/icons/front-end/TypeScript.astro";
-import Angular from "@/icons/front-end/Angular.astro";
+import { Icon } from "astro-icon/components";
 
 interface Props {
   title: string;
@@ -13,52 +8,42 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<article class="col-span-5 border p-5">
+<article
+  class="col-span-5 p-5 bg-primary-gradient border border-mayer-100 rounded-xl"
+>
   <h2 class="text-2xl font-semibold mb-5 text-blue-300/95 text-center">
     {title}
   </h2>
 
   <div class="grid grid-cols-3 gap-5">
     <div class="flex flex-col justify-center items-center">
-      <Html class="w-8 h-8" />
+      <Icon name="front-end/html" class="size-8" />
       <h3>HTML</h3>
     </div>
 
     <div class="flex flex-col justify-center items-center">
-      <Css class="w-8 h-8" />
+      <Icon name="front-end/css" class="size-8" />
       <h3>CSS</h3>
     </div>
 
     <div class="flex flex-col justify-center items-center">
-      <Tailwind class="w-8 h-8" />
+      <Icon name="front-end/tailwindcss" class="size-8" />
       <h3>TailwindCSS</h3>
     </div>
 
     <div class="flex flex-col justify-center items-center">
-      <JavaScript class="w-8 h-8" />
+      <Icon name="front-end/javascript" class="size-8" />
       <h3>JavaScript</h3>
     </div>
 
     <div class="flex flex-col justify-center items-center">
-      <TypeScript class="w-8 h-8" />
+      <Icon name="front-end/typescript" class="size-8" />
       <h3>TypeScript</h3>
     </div>
 
     <div class="flex flex-col justify-center items-center">
-      <Angular class="w-8 h-8" />
+      <Icon name="front-end/angular" class="size-8" />
       <h3>Angular</h3>
     </div>
   </div>
 </article>
-
-<style>
-  article {
-    background: linear-gradient(
-      30.6deg,
-      rgba(124, 130, 177, 0.12) 28.69%,
-      hsla(241, 41%, 62%, 0.3) 100%
-    );
-    border: 1px solid hsla(241, 41%, 62%, 0.3);
-    border-radius: 12px;
-  }
-</style>
