@@ -3,13 +3,14 @@ import Logo from "@/components/Logo.astro";
 import Code from "@/icons/Code.astro";
 
 const navList = [
-  { name: "Sobre mí", url: "/" },
+  { name: "Inicio", url: "#home" },
+  { name: "Sobre mí", url: "#aboutMe" },
   { name: "Proyectos", url: "#projects" },
   { name: "Contacto", url: "#contact" },
 ];
 ---
 
-<header class="flex justify-center items-center w-full py-6 gap-14">
+<header id="home" class="flex justify-center items-center w-full py-6 gap-14">
   <Logo>
     <h2 class="text-xl font-semibold" slot="title">Mayer</h2>
     <Code class="size-8" slot="icon" />
