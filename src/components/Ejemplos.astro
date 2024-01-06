@@ -1,0 +1,158 @@
+---
+import Html from "@/icons/front-end/Html.astro";
+import Css from "@/icons/front-end/Css.astro";
+import JavaScript from "@/icons/front-end/JavaScript.astro";
+import TypeScript from "@/icons/front-end/TypeScript.astro";
+import Vite from "@/icons/front-end/Vite.astro";
+import AstroIcon from "@/icons/front-end/AstroIcon.astro";
+import Svelte from "@/icons/front-end/Svelte.astro";
+---
+
+<section class="grid grid-cols-2 max-w-3xl mx-auto gap-4 p-14" id="projects">
+  <article class="p-5">
+    <a href="">
+      <h3 class="text-3xl font-semibold mb-3">Juego preguntas</h3>
+      <img
+        class="rounded-lg mb-3"
+        src="/juego-preguntas.webp"
+        alt="Juego Preguntas"
+        loading="lazy"
+      />
+      <p>Esta es una aplicación de preguntas y respuestas en tiempo real.</p>
+      <ul class="flex justify-center items-center gap-2">
+        <li>
+          <Html class="w-5 h-5" />
+          HTML
+        </li>
+        <li>
+          <Css class="w-5 h-5" />
+          CSS
+        </li>
+        <li>
+          <JavaScript class="w-5 h-5" />
+          JavaScript
+        </li>
+      </ul>
+    </a>
+  </article>
+
+  <article class="p-5">
+    <a href="">
+      <h3 class="text-3xl font-semibold mb-3">Conversor divisas</h3>
+      <img
+        class="rounded-lg mb-3"
+        src="/conversor-divisas.webp"
+        alt="Conversor divisas"
+        loading="lazy"
+      />
+      <p>Esta es una aplicación de divisas en tiempo real.</p>
+      <ul class="flex justify-center items-center gap-2">
+        <li>
+          <Html class="w-5 h-5" />
+          HTML
+        </li>
+        <li>
+          <Css class="w-5 h-5" />
+          CSS
+        </li>
+        <li>
+          <JavaScript class="w-5 h-5" />
+          JavaScript
+        </li>
+      </ul>
+    </a>
+  </article>
+
+  <article class="p-5">
+    <a href="">
+      <h3 class="text-3xl font-semibold mb-3">Weather App</h3>
+      <img
+        class="rounded-lg mb-3"
+        src="/aplicacion-clima.webp"
+        alt="Aplicación Clima"
+        loading="lazy"
+      />
+      <p>Esta es una aplicación de clima en tiempo real.</p>
+      <ul class="flex justify-center items-center gap-2">
+        <li>
+          <Html class="w-5 h-5" />
+          HTML
+        </li>
+        <li>
+          <Css class="w-5 h-5" />
+          CSS
+        </li>
+        <li>
+          <Vite class="w-5 h-5" />
+          Vite
+        </li>
+        <li>
+          <TypeScript class="w-5 h-5" />
+          TypeScript
+        </li>
+      </ul>
+    </a>
+  </article>
+
+  <article class="p-5">
+    <a href="">
+      <h3 class="text-3xl font-semibold mb-3">Proyecto Weykman</h3>
+      <img
+        class="rounded-lg mb-3"
+        src="/portafolio-weykman.webp"
+        alt="Portafolio Weykman"
+        loading="lazy"
+      />
+      <p>Esta es una aplicación de portafolio en tiempo real.</p>
+      <ul class="flex justify-center items-center gap-2">
+        <li>
+          <AstroIcon class="w-5 h-5" />
+          Astro
+        </li>
+        <li>
+          <JavaScript class="w-5 h-5" />
+          JavaScript
+        </li>
+      </ul>
+    </a>
+  </article>
+
+  <article class="p-5">
+    <a href="">
+      <h3 class="text-3xl font-semibold mb-3">API Rick and Morty</h3>
+      <img
+        class="rounded-lg mb-3"
+        src="/rick-morty.webp"
+        alt="API Rick and Morty"
+        loading="lazy"
+      />
+      <p>Esta es una aplicación consumiendo la API de Rick and Morty.</p>
+      <ul class="flex justify-center items-center gap-2">
+        <li>
+          <Html class="w-5 h-5" />
+          HTML
+        </li>
+        <li>
+          <Css class="w-5 h-5" />
+          CSS
+        </li>
+        <li>
+          <Svelte class="w-5 h-5" />
+          Svelte
+        </li>
+      </ul>
+    </a>
+  </article>
+</section>
+
+<style>
+  article {
+    background: linear-gradient(
+      30.6deg,
+      rgba(124, 130, 177, 0.12) 28.69%,
+      hsla(241, 41%, 62%, 0.3) 100%
+    );
+    border: 1px solid hsla(241, 41%, 62%, 0.3);
+    border-radius: 12px;
+  }
+</style>
