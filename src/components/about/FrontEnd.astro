@@ -12,11 +12,13 @@ const { title } = Astro.props;
 <article
   class="col-span-5 p-5 bg-primary-gradient border border-mayer-100 rounded-xl"
 >
-  <h2 class="text-2xl font-semibold mb-5 text-blue-300/95 text-center">
+  <h2
+    class="text-2xl font-semibold mb-6 text-blue-300/95 text-center underline"
+  >
     {title}
   </h2>
 
-  <div class="grid grid-cols-3 gap-5">
+  <div class="grid grid-cols-3 gap-y-3">
     <BentoItem>
       <Icon name="front-end/html" slot="icon" class="size-8" />
       <h3 slot="technology">HTML</h3>
