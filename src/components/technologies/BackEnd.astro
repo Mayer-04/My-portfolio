@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import BentoItem from "@/components/about/BentoItem.astro";
 
 interface Props {
   title: string;
@@ -16,35 +17,34 @@ const { title } = Astro.props;
   </h2>
 
   <div class="grid grid-cols-3 gap-5">
-    <div class="flex flex-col justify-center items-center">
-      <Icon name="back-end/docker" class="size-8" />
+    <BentoItem>
+      <Icon name="back-end/docker" slot="icon" class="size-8" />
+      <h3 slot="technology">Docker</h3>
+    </BentoItem>
 
-      <h3>Docker</h3>
-    </div>
+    <BentoItem>
+      <Icon name="back-end/node" slot="icon" class="size-8" />
+      <h3 slot="technology">Node.js</h3>
+    </BentoItem>
 
-    <div class="flex flex-col justify-center items-center">
-      <Icon name="back-end/node" class="size-8" />
-      <h3>Node.js</h3>
-    </div>
+    <BentoItem>
+      <Icon name="back-end/express" slot="icon" class="size-8" />
+      <h3 slot="technology">Express</h3>
+    </BentoItem>
 
-    <div class="flex flex-col justify-center items-center">
-      <Icon name="back-end/express" class="size-8" />
-      <h3>Express</h3>
-    </div>
+    <BentoItem>
+      <Icon name="back-end/mongodb" slot="icon" class="size-8" />
+      <h3 slot="technology">MongoDB</h3>
+    </BentoItem>
 
-    <div class="flex flex-col justify-center items-center">
-      <Icon name="back-end/mongodb" class="size-8" />
-      <h3>MongoDB</h3>
-    </div>
+    <BentoItem>
+      <Icon name="back-end/postgresql" slot="icon" class="size-8" />
+      <h3 slot="technology">PostgreSQL</h3>
+    </BentoItem>
 
-    <div class="flex flex-col justify-center items-center">
-      <Icon name="back-end/postgresql" class="size-8" />
-      <h3>PostgreSQL</h3>
-    </div>
-
-    <div class="flex flex-col justify-center items-center">
-      <Icon name="back-end/prisma" class="size-8" />
-      <h3>Prisma</h3>
-    </div>
+    <BentoItem>
+      <Icon name="back-end/prisma" slot="icon" class="size-8" />
+      <h3 slot="technology">Prisma</h3>
+    </BentoItem>
   </div>
 </article>
