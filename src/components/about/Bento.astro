@@ -10,17 +10,18 @@ import BackEnd from "@/components/about/BackEnd.astro";
   id="aboutMe"
   class="grid grid-cols-9 mx-auto max-w-3xl auto-rows-auto gap-4 p-14"
 >
-  <AboutMe title="Sobre mí" />
+  <AboutMe class="col-span-4" title="Sobre mí" />
 
   <Experience
+    class="col-span-5"
     title="Experiencia"
     year="Febrero 2019 - Enero 2020"
     company="Max Globo"
     description="Desarrollador de sitios web y mantenimiento de la plataforma."
   />
 
-  <AvailableForWork />
+  <AvailableForWork class="col-span-9" />
 
-  <FrontEnd title="Tecnologías Front-End" />
-  <BackEnd title="Tecnologías Back-End" />
+  <FrontEnd class="col-span-5" title="Tecnologías Front-End" />
+  <BackEnd class="col-span-4" title="Tecnologías Back-End" />
 </section>

@@ -4,13 +4,14 @@ import BentoItem from "@/components/about/BentoItem.astro";
 
 interface Props {
   title: string;
+  class?: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <article
-  class="col-span-5 p-5 bg-gradient-100 border border-mayer-100 rounded-xl"
+  class=`${Astro.props.class} p-5 bg-gradient-100 border border-mayer-100 rounded-xl`
 >
   <h2
     class="text-2xl font-semibold mb-6 text-blue-300/95 text-center underline"
