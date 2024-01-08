@@ -1,33 +1,38 @@
 ---
-
+import { Icon } from "astro-icon/components";
 ---
 
-<article class="flex">
-  <div>
-    <h3 class="text-2xl">Aplicación del clima v2345</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas amet eum
-      laborum sit saepe placeat natus provident? Ducimus quae saepe qui amet
-      ipsa dolorem voluptas, quos, quam recusandae ratione fuga.
-    </p>
-
-    <div>
-      <ul class="flex flex-wrap">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Typescript</li>
-      </ul>
-    </div>
-
-    <div class="flex">
-      <!-- TODO: Icono de Github y link de la página -->
-      <a href=""></a>
-      <a href=""></a>
-    </div>
+<article class="grid grid-cols-1 gap-y-5 p-5">
+  <div class="">
+    <span class="py-1 px-3 rounded-full bg-blue-300/95">HTML</span>
+    <span class="py-1 px-3 rounded-full bg-blue-300/95">CSS</span>
+    <span class="py-1 px-3 rounded-full bg-blue-300/95">JavaScript</span>
+    <span class="py-1 px-3 rounded-full bg-blue-300/95">TypeScript</span>
+  </div>
+  <div class="flex items-center space-x-2 relative gap-1">
+    <h3 class="text-xl font-semibold text-blue-300/95">
+      Aplicación del clima v345
+    </h3>
+    <time class="text-sm text-zinc-500" datetime="2023-6-31"
+      >31 de junio 2023</time
+    >
   </div>
 
   <figure>
     <img src="https://picsum.photos/800/600" alt="image" />
   </figure>
+
+  <div class="flex justify-end items-center gap-2">
+    <span>
+      <a href="">
+        <Icon name="github" slot="icon" class="size-5" />
+      </a>
+    </span>
+    <span>
+      <a href="">
+        <Icon name="arrow" slot="icon" class="size-5" />
+      </a>
+    </span>
+  </div>
 </article>
+
