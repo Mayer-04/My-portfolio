@@ -1,0 +1,31 @@
+{
+  "name": "my-portfolio",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "eslint --ext .astro,.ts,.js .",
+    "lint:fix": "eslint --ext .astro,.ts,.js, . --fix",
+    "format": "prettier --write . --plugin=prettier-plugin-astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "0.5.9",
+    "@astrojs/tailwind": "5.1.0",
+    "astro": "4.5.8",
+    "tailwindcss": "3.4.1",
+    "typescript": "5.4.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "7.3.1",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-astro": "0.32.0",
+    "prettier": "3.2.5",
+    "prettier-plugin-astro": "0.13.0",
+    "prettier-plugin-tailwindcss": "0.5.12"
+  }
+}
